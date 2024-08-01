@@ -1,0 +1,128 @@
+duration=10s, c=10 size=256 store=nutsdb
+nutsdb/nofsync batch write test inserted: 4000000 entries; took: 14.614708375s s , mean: 14.614708
+nutsdb/nofsync Alloc = 1716 MiB	TotalAlloc = 4822 MiB	Sys = 2029 MiB	HeapAlloc = 1716 MiB	HeapObjects = 26067812 MiB	HeapInuse = 1741 MiB	NumGC = 30
+nutsdb/nofsync disk usage: 1280 MiB
+nutsdb/nofsync keys rate: 135690 op/s, mean: 736 ns, took: 10 s
+nutsdb/nofsync set rate: 112565 op/s, mean: 888 ns, took: 10 s
+nutsdb/nofsync get rate: 1604634 op/s, mean: 62 ns, took: 10 s
+nutsdb/nofsync setmixed rate: 24623 op/s, mean: 40611 ns, took: 10 s
+nutsdb/nofsync getmixed rate: 274211 op/s, mean: 364 ns, took: 10 s
+nutsdb/nofsync del rate: 147513 op/s, mean: 677 ns, took: 10 s
+duration=10s, c=10 size=256 store=badger
+badger/nofsync batch write test inserted: 4000000 entries; took: 11.725985875s s , mean: 11.725986
+badger/nofsync Alloc = 471 MiB	TotalAlloc = 15863 MiB	Sys = 1174 MiB	HeapAlloc = 471 MiB	HeapObjects = 1038173 MiB	HeapInuse = 473 MiB	NumGC = 79
+badger/nofsync disk usage: 2369 MiB
+badger/nofsync keys rate: 27352 op/s, mean: 3655 ns, took: 10 s
+badger/nofsync set rate: 87116 op/s, mean: 1147 ns, took: 10 s
+badger/nofsync get rate: 547923 op/s, mean: 182 ns, took: 10 s
+badger/nofsync setmixed rate: 8317 op/s, mean: 120235 ns, took: 10 s
+badger/nofsync getmixed rate: 376446 op/s, mean: 265 ns, took: 10 s
+badger/nofsync del rate: 121904 op/s, mean: 820 ns, took: 9 s
+duration=10s, c=10 size=256 store=bbolt
+bbolt/nofsync batch write test inserted: 4000000 entries; took: 2m19.611914375s s , mean: 139.611914
+bbolt/nofsync Alloc = 36 MiB	TotalAlloc = 52959 MiB	Sys = 86 MiB	HeapAlloc = 36 MiB	HeapObjects = 14230 MiB	HeapInuse = 38 MiB	NumGC = 2151
+bbolt/nofsync disk usage: 1584 MiB
+bbolt/nofsync keys rate: 739850 op/s, mean: 135 ns, took: 9 s
+bbolt/nofsync set rate: 22814 op/s, mean: 4383 ns, took: 10 s
+bbolt/nofsync get rate: 781529 op/s, mean: 127 ns, took: 10 s
+bbolt/nofsync setmixed rate: 11605 op/s, mean: 86165 ns, took: 10 s
+bbolt/nofsync getmixed rate: 603891 op/s, mean: 165 ns, took: 10 s
+bbolt/nofsync del rate: 92845 op/s, mean: 1077 ns, took: 10 s
+duration=10s, c=10 size=256 store=bolt
+bolt/nofsync batch write test inserted: 4000000 entries; took: 2m20.39979025s s , mean: 140.399790
+bolt/nofsync Alloc = 34 MiB	TotalAlloc = 52872 MiB	Sys = 82 MiB	HeapAlloc = 34 MiB	HeapObjects = 16290 MiB	HeapInuse = 36 MiB	NumGC = 2279
+bolt/nofsync disk usage: 1584 MiB
+bolt/nofsync keys rate: 733836 op/s, mean: 136 ns, took: 10 s
+bolt/nofsync set rate: 19607 op/s, mean: 5100 ns, took: 10 s
+bolt/nofsync get rate: 731267 op/s, mean: 136 ns, took: 10 s
+bolt/nofsync setmixed rate: 9718 op/s, mean: 102891 ns, took: 10 s
+bolt/nofsync getmixed rate: 542892 op/s, mean: 184 ns, took: 10 s
+bolt/nofsync del rate: 22224 op/s, mean: 4499 ns, took: 10 s
+duration=10s, c=10 size=256 store=leveldb
+leveldb/nofsync batch write test inserted: 4000000 entries; took: 1m32.448291s s , mean: 92.448291
+leveldb/nofsync Alloc = 17 MiB	TotalAlloc = 5127 MiB	Sys = 36 MiB	HeapAlloc = 17 MiB	HeapObjects = 20640 MiB	HeapInuse = 19 MiB	NumGC = 509
+leveldb/nofsync disk usage: 1060 MiB
+leveldb/nofsync keys rate: 175546 op/s, mean: 569 ns, took: 9 s
+leveldb/nofsync set rate: 56641 op/s, mean: 1765 ns, took: 10 s
+leveldb/nofsync get rate: 481400 op/s, mean: 207 ns, took: 10 s
+leveldb/nofsync setmixed rate: 37804 op/s, mean: 26451 ns, took: 10 s
+leveldb/nofsync getmixed rate: 94591 op/s, mean: 1057 ns, took: 10 s
+leveldb/nofsync del rate: 390857 op/s, mean: 255 ns, took: 10 s
+duration=10s, c=10 size=256 store=buntdb
+buntdb/nofsync batch write test inserted: 4000000 entries; took: 18.754009125s s , mean: 18.754009
+buntdb/nofsync Alloc = 1912 MiB	TotalAlloc = 3973 MiB	Sys = 2028 MiB	HeapAlloc = 1912 MiB	HeapObjects = 14110738 MiB	HeapInuse = 1915 MiB	NumGC = 24
+buntdb/nofsync disk usage: 1264 MiB
+buntdb/nofsync keys rate: 411 op/s, mean: 242754 ns, took: 10 s
+buntdb/nofsync set rate: 19757 op/s, mean: 5061 ns, took: 10 s
+buntdb/nofsync get rate: 2098415 op/s, mean: 47 ns, took: 10 s
+buntdb/nofsync setmixed rate: 8102 op/s, mean: 123411 ns, took: 10 s
+buntdb/nofsync getmixed rate: 82720 op/s, mean: 1208 ns, took: 10 s
+buntdb/nofsync del rate: 267903 op/s, mean: 373 ns, took: 10 s
+duration=10s, c=10 size=256 store=pebble
+pebble/nofsync batch write test inserted: 4000000 entries; took: 1m21.656091833s s , mean: 81.656092
+pebble/nofsync Alloc = 2 MiB	TotalAlloc = 5892 MiB	Sys = 19 MiB	HeapAlloc = 2 MiB	HeapObjects = 7619 MiB	HeapInuse = 4 MiB	NumGC = 2844
+pebble/nofsync disk usage: 1052 MiB
+pebble/nofsync keys rate: 168755 op/s, mean: 592 ns, took: 10 s
+pebble/nofsync set rate: 62585 op/s, mean: 1597 ns, took: 10 s
+pebble/nofsync get rate: 559572 op/s, mean: 178 ns, took: 10 s
+pebble/nofsync setmixed rate: 66058 op/s, mean: 15138 ns, took: 10 s
+pebble/nofsync getmixed rate: 67319 op/s, mean: 1485 ns, took: 10 s
+pebble/nofsync del rate: 384918 op/s, mean: 259 ns, took: 10 s
+duration=10s, c=10 size=256 store=pogreb
+pogreb/nofsync batch write test inserted: 4000000 entries; took: 40.320122083s s , mean: 40.320122
+pogreb/nofsync Alloc = 1 MiB	TotalAlloc = 7913 MiB	Sys = 19 MiB	HeapAlloc = 1 MiB	HeapObjects = 6708 MiB	HeapInuse = 2 MiB	NumGC = 3176
+pogreb/nofsync disk usage: 1154 MiB
+pogreb/nofsync keys rate: -1 op/s, mean: -1 ns, took: -1 s
+pogreb/nofsync set rate: 77509 op/s, mean: 1290 ns, took: 10 s
+pogreb/nofsync get rate: 2256807 op/s, mean: 44 ns, took: 10 s
+pogreb/nofsync setmixed rate: 45270 op/s, mean: 22089 ns, took: 10 s
+pogreb/nofsync getmixed rate: 457269 op/s, mean: 218 ns, took: 10 s
+pogreb/nofsync del rate: 1179826 op/s, mean: 84 ns, took: 10 s
+duration=10s, c=10 size=256 store=rocksdb
+panic: unknown store type: rocksdb
+
+goroutine 1 [running]:
+main.main()
+	/Users/lihua.llh/Documents/codes/lab/golang/kvbench/cmd/cli/main.go:56 +0x580
+duration=10s, c=10 size=256 store=btree
+btree/nofsync batch write test inserted: 4000000 entries; took: 11.6655215s s , mean: 11.665522
+btree/nofsync Alloc = 1650 MiB	TotalAlloc = 3035 MiB	Sys = 1753 MiB	HeapAlloc = 1650 MiB	HeapObjects = 13784782 MiB	HeapInuse = 1652 MiB	NumGC = 19
+btree/nofsync disk usage: 1113 MiB
+btree/nofsync keys rate: 1096963 op/s, mean: 91 ns, took: 10 s
+btree/nofsync set rate: 189305 op/s, mean: 528 ns, took: 10 s
+btree/nofsync get rate: 2293178 op/s, mean: 43 ns, took: 10 s
+btree/nofsync setmixed rate: 64222 op/s, mean: 15570 ns, took: 10 s
+btree/nofsync getmixed rate: 658351 op/s, mean: 151 ns, took: 10 s
+btree/nofsync del rate: 1418046 op/s, mean: 70 ns, took: 10 s
+duration=10s, c=10 size=256 store=btree/memory
+67767:M 01 Aug 19:31:54.993 * persistance disabled
+btree/memory/nofsync batch write test inserted: 4000000 entries; took: 8.79188425s s , mean: 8.791884
+btree/memory/nofsync Alloc = 1538 MiB	TotalAlloc = 3033 MiB	Sys = 1712 MiB	HeapAlloc = 1538 MiB	HeapObjects = 13252535 MiB	HeapInuse = 1540 MiB	NumGC = 19
+btree/memory/nofsync keys rate: 1018058 op/s, mean: 98 ns, took: 10 s
+btree/memory/nofsync set rate: 919914 op/s, mean: 108 ns, took: 10 s
+btree/memory/nofsync get rate: 2215700 op/s, mean: 45 ns, took: 10 s
+btree/memory/nofsync setmixed rate: 68597 op/s, mean: 14577 ns, took: 10 s
+btree/memory/nofsync getmixed rate: 806471 op/s, mean: 123 ns, took: 10 s
+btree/memory/nofsync del rate: 815062 op/s, mean: 122 ns, took: 10 s
+duration=10s, c=10 size=256 store=map
+map/nofsync batch write test inserted: 4000000 entries; took: 5.499225125s s , mean: 5.499225
+map/nofsync Alloc = 1895 MiB	TotalAlloc = 3436 MiB	Sys = 1998 MiB	HeapAlloc = 1895 MiB	HeapObjects = 9547804 MiB	HeapInuse = 1896 MiB	NumGC = 20
+map/nofsync disk usage: 1113 MiB
+map/nofsync keys rate: 2364810 op/s, mean: 42 ns, took: 10 s
+map/nofsync set rate: 181388 op/s, mean: 551 ns, took: 10 s
+map/nofsync get rate: 5585045 op/s, mean: 17 ns, took: 10 s
+map/nofsync setmixed rate: 98508 op/s, mean: 10151 ns, took: 10 s
+map/nofsync getmixed rate: 1111368 op/s, mean: 89 ns, took: 10 s
+map/nofsync del rate: 2514275 op/s, mean: 39 ns, took: 10 s
+duration=10s, c=10 size=256 store=map/memory
+69047:M 01 Aug 19:33:51.009 * persistance disabled
+map/memory/nofsync batch write test inserted: 4000000 entries; took: 2.9945175s s , mean: 2.994518
+map/memory/nofsync Alloc = 1890 MiB	TotalAlloc = 3435 MiB	Sys = 2005 MiB	HeapAlloc = 1890 MiB	HeapObjects = 9525604 MiB	HeapInuse = 1892 MiB	NumGC = 19
+map/memory/nofsync keys rate: 2397553 op/s, mean: 41 ns, took: 10 s
+map/memory/nofsync set rate: 1084926 op/s, mean: 92 ns, took: 10 s
+map/memory/nofsync get rate: 5380740 op/s, mean: 18 ns, took: 10 s
+map/memory/nofsync setmixed rate: 125090 op/s, mean: 7994 ns, took: 10 s
+map/memory/nofsync getmixed rate: 1994535 op/s, mean: 50 ns, took: 10 s
+map/memory/nofsync del rate: 1991464 op/s, mean: 50 ns, took: 9 s
+duration=10s, c=10 size=256 store=kv
+2024/08/01 19:34:44 main.go:497: [0;33m[warning] kv store is unstable[0m
