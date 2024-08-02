@@ -34,6 +34,38 @@ Features:
 - Option to disable fsync
 - Compatible with Redis clients
 
+## Quickstart
+
+Run the following commands:
+```shell
+cd cmd/cli
+go build -o cli main.go 
+./test.sh
+```
+
+Or manual test cli command:
+```shell
+Usage of ./cli:
+  -c int
+        concurrent goroutines (default runtime.NumCPU())
+  -d duration
+        test duration for each case (default 10s)
+  -fsync
+        fsync (default false)
+  -s string
+        store type (default "map")
+  -save string
+        save path, ouput csv file path (default "", not output)
+  -set int
+        batch set count (default 4000000)
+  -size int
+        data size for each value (default 256)
+```
+
+Example:
+```shell
+./cli -d 10s -size 256 -s "bbolt" -save "benchmarks/nofsync.csv" >> benchmarks/test.log 2>&1
+```
 
 ## SSD benchmark
 The following benchmarks show the throughput of inserting/reading keys (of size
