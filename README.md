@@ -45,7 +45,7 @@ Computer configuration: Apple M1 Pro, 16GB RAM, 1TB SSD
 
 **throughputs**
 
-| name | BatchWrite cost(s) | MemUsage(MiB) | HeapInuse(MiB) | DiskUsage(MiB) | Keys op/s | Set op/s | Get op/s | Setmixed op/s | Getmixed op/s | Del op/s |
+| name | BatchWrite cost(s) | MemUsage(MiB) | HeapInuse(MiB) | DiskUsage(MiB) | Prefix op/s | Set op/s | Get op/s | Setmixed op/s | Getmixed op/s | Del op/s |
 | --- | --- | --- | --- | --- | -- | --- | --- | --- | --- | --- |
 | nutsdb | 14 | 1716 | 1741 | 1280 | 135690 | 112565 | 1604634 | 24623 | 274211 | 147513 |
 | badger | 11 | 471 | 473 | 2369 | 27352 | 87116 | 547923 | 8317 | 376446 | 121904 |
